@@ -4,6 +4,8 @@ const logo = document.querySelector('.logo__video')
 const app = document.querySelector('.app-page')
 const load = document.querySelector('.load-page')
 
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
 
 function firstCounter(ms) {
     let counterFirst = 0;
