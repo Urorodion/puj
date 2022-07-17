@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -44,6 +45,7 @@ body::-webkit-scrollbar {
     justify-self: center;
     font-family: "Roboto";
     font-size: 10vw;
+    transition: 1s ease-in-out;
 }
 
 .progress {
@@ -52,13 +54,22 @@ body::-webkit-scrollbar {
     background-color: rgb(22, 22, 22);
     height: 2vh;
     align-self: flex-end;
-    width: 100vw;
-    transition: 10s width ease-in;
+    animation: kai 5s ease-in;
+}
+
+@keyframes kai {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100vw;
+    }
+
 }
 
 
-
-.app {
+.app-page {
     display: none;
     justify-content: center;
     height: 100vh;

@@ -1,8 +1,7 @@
 const fontsWeight = ['100', '300', '400', '500', '700', '900'];
 const first = document.querySelector('.timer__number')
-const progress = document.querySelector('.progress')
 const logo = document.querySelector('.logo__video')
-const app = document.querySelector('.app')
+const app = document.querySelector('.app-page')
 const load = document.querySelector('.load-page')
 
 
@@ -15,7 +14,7 @@ function firstCounter(ms) {
         first.style.fontWeight = weidth;
     }, ms)
 }
-firstCounter(100)
+firstCounter(50)
 
 
 function randomweight() {
@@ -24,10 +23,7 @@ function randomweight() {
 }
 
 
-function progres() {
-    progress.style.width = '0'
-}
-progres()
+
 
 
 setTimeout(() => {
@@ -35,5 +31,5 @@ setTimeout(() => {
     logo.style.filter = 'none';
     load.style.display = 'none';
     app.style.display = 'block';
-}, 10000);
+}, 5000);
 
