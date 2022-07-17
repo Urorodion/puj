@@ -46,7 +46,28 @@ body::-webkit-scrollbar {
     font-family: "Roboto";
     font-size: 10vw;
     transition: 1s ease-in-out;
+    animation: kaii 5s ease-in-out;
 }
+
+
+@keyframes kaii {
+    0% {
+        font-size: 10vw;
+    }
+
+    20% {
+        font-size: 5vw;
+    }
+
+    60% {
+        font-size: 15vw;
+    }
+
+    100% {
+        font-size: 10vw;
+    }
+}
+
 
 .progress {
     grid-column: 1/4;
