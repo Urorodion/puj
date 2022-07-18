@@ -75,7 +75,7 @@ body::-webkit-scrollbar {
     justify-content: center;
     height: inherit;
     display: none;
-    background-color: black;
+    background-color: #140F15;
     grid-template-columns: 20vw 60vw 18vw;
     transform: translateY(100vh);
     animation: ani 1s forwards;
